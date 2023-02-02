@@ -9,6 +9,7 @@ Briefly summarize the regex you will be describing and what you will explain. In
 ## Table of Contents
 
 - [Anchors](#anchors)
+  this is some stuf
 - [Quantifiers](#quantifiers)
 - [OR Operator](#or-operator)
 - [Character Classes](#character-classes)
