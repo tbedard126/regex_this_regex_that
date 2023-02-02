@@ -9,7 +9,6 @@ Briefly summarize the regex you will be describing and what you will explain. In
 ## Table of Contents
 
 - [Anchors](#anchors)
-  this is some stuf
 - [Quantifiers](#quantifiers)
 - [OR Operator](#or-operator)
 - [Character Classes](#character-classes)
@@ -25,7 +24,31 @@ Briefly summarize the regex you will be describing and what you will explain. In
 
 ### Anchors
 
+Anchors are special characters in regular expressions (regex) that match a position in the string being searched, rather than a character. There are two types of anchors: start and end.
+
+Start Anchor (^): Matches the position at the start of the string. For example, ^A matches an A only if it appears at the beginning of the string.
+
+End Anchor ($): Matches the position at the end of the string. For example, A$ matches an A only if it appears at the end of the string.
+
+Anchors are useful for ensuring that the match occurs in a specific location within the string. For example, if you only want to match a pattern if it appears at the start of a line, you can use the start anchor ^ in combination with the multiline flag m in your regex.
+
 ### Quantifiers
+
+Quantifiers are special characters in regular expressions (regex) that specify the number of times a character or group of characters can occur. There are several types of quantifiers:
+
+? - Matches zero or one occurrence of the preceding character or group. For example, A? matches an optional A.
+
+- - Matches one or more occurrences of the preceding character or group. For example, A+ matches one or more As.
+
+* - Matches zero or more occurrences of the preceding character or group. For example, A\* matches zero or more As.
+
+{n} - Matches exactly n occurrences of the preceding character or group. For example, A{3} matches exactly three As.
+
+{n,} - Matches n or more occurrences of the preceding character or group. For example, A{3,} matches three or more As.
+
+{m,n} - Matches at least m and at most n occurrences of the preceding character or group. For example, A{2,5} matches two to five As.
+
+Quantifiers are useful for specifying the number of times a character or group of characters can occur in a string, allowing you to make complex matches with a single pattern.
 
 ### OR Operator
 
