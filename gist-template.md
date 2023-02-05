@@ -33,7 +33,7 @@ Anchors are special characters in regular expressions (regex) that match a posit
 
 Start Anchor ^: Matches the position at the start of the string. For example, ^A matches an A only if it appears at the beginning of the string.
 
-End Anchor $: Matches the position at the end of the string. For example, A$ matches an A only if it appears at the end of the string.
+End Anchor $ Matches the position at the end of the string. For example, A$ matches an A only if it appears at the end of the string.
 
 ### Quantifiers
 
