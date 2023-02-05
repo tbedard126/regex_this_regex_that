@@ -96,7 +96,7 @@ Boundaries are crucial in applications involving string manipulation, pattern ma
 
 Back references in regular expressions allow you to repeat a portion of a pattern that was previously matched. By referencing a previous match, you can ensure that a particular pattern appears twice in a string or that a pattern is repeated in a specific way.
 
-Back references can be created by enclosing a portion of the pattern in parentheses and then referring to that portion in the expression using a special syntax, either a number (such as \1) or a name (such as \k<name>). For example, the pattern /(\w+)\s\1/ matches repeating words separated by a space, by referencing the first captured group ((\w+)) with the back reference \1.
+Back references can be created by enclosing a portion of the pattern in parentheses and then referring to that portion in the expression using a special syntax, either a number (such as \1) or a name (such as \k name). For example, the pattern /(\w+)\s\1/ matches repeating words separated by a space, by referencing the first captured group ((\w+)) with the back reference \1.
 
 Back references are a useful tool in string manipulation, pattern matching, and data validation. They allow you to write more compact and efficient expressions and can lead to more precise and accurate pattern matching.
 
@@ -113,3 +113,4 @@ Look-ahead and look-behind are useful in matching patterns that depend on their 
 ## Author
 
 This tutorial was made by Tyler Bedard for my coding boot camp.
+[tbedard126](https://github.com/tbedard126)
