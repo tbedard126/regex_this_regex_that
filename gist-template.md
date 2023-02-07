@@ -12,7 +12,6 @@ This regular expression pattern is a rather simple way to vaildate is an email a
 - [Anchors](#anchors)
 - [Quantifiers](#quantifiers)
 - [Character Classes](#character-classes)
-- [Flags](#flags)
 - [Grouping and Capturing](#grouping-and-capturing)
 - [Bracket Expressions](#bracket-expressions)
 - [Boundaries](#boundaries)
@@ -24,9 +23,9 @@ This regular expression pattern is a rather simple way to vaildate is an email a
 
 Anchors are special characters in regular expressions (regex) that match a position in the string being searched, rather than a character. There are two types of anchors: start and end.
 
-Start Anchor ^: Matches the position at the start of the string. For example, ^A matches an A only if it appears at the beginning of the string.
+Start Anchor `^`: Matches the position at the start of the string. For example, `^A` matches an A only if it appears at the beginning of the string.
 
-End Anchor $ Matches the position at the end of the string. For example, A$ matches an A only if it appears at the end of the string.
+End Anchor `$` Matches the position at the end of the string. For example, `A$` matches an A only if it appears at the end of the string.
 
 ### Quantifiers
 
@@ -44,8 +43,6 @@ The first quantifier in this regex are `+` and it is used in two places `/^([a-z
 ### Character Classes
 
 Character classes in regular expressions are a way to match a single character in the input text by specifying a set of characters. They are marked by square brackets [] and can contain individual characters, ranges of characters, or predefined character sets like \d for digits, \w for word characters, and \s for whitespace characters. There are three character classes in this regex expression. The first one is `[a-z0-9_\.-]` and this matches lowercase letters, digits, underscores, dots and hyphens. The second one is `[\da-z\.-]` that matches digits, lowercase letters, dots and hyphens. The third one in the regex is `[a-z\.]` this one only matches lowercase letters and dots.
-
-### Flags
 
 ### Grouping and Capturing
 
