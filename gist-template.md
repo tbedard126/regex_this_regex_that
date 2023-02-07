@@ -11,15 +11,12 @@ This regular expression pattern is a rather simple way to vaildate is an email a
 
 - [Anchors](#anchors)
 - [Quantifiers](#quantifiers)
-- [OR Operator](#or-operator)
 - [Character Classes](#character-classes)
 - [Flags](#flags)
 - [Grouping and Capturing](#grouping-and-capturing)
 - [Bracket Expressions](#bracket-expressions)
-- [Greedy and Lazy Match](#greedy-and-lazy-match)
 - [Boundaries](#boundaries)
 - [Back-references](#back-references)
-- [Look-ahead and Look-behind](#look-ahead-and-look-behind)
 
 ## Regex Components
 
@@ -44,8 +41,6 @@ Quantifiers in regex's are symbols that specify how many times a pattern should 
 
 The first quantifier in this regex are `+` and it is used in two places `/^([a-z0-9_\.-]+)` and `([\da-z\.-]+)`. The second quantifier in this is `{2,6}` and this one matches between 2 and 6 of the preceding pattern.
 
-### OR Operator
-
 ### Character Classes
 
 Character classes in regular expressions are a way to match a single character in the input text by specifying a set of characters. They are marked by square brackets [] and can contain individual characters, ranges of characters, or predefined character sets like \d for digits, \w for word characters, and \s for whitespace characters. There are three character classes in this regex expression. The first one is `[a-z0-9_\.-]` and this matches lowercase letters, digits, underscores, dots and hyphens. The second one is `[\da-z\.-]` that matches digits, lowercase letters, dots and hyphens. The third one in the regex is `[a-z\.]` this one only matches lowercase letters and dots.
@@ -61,8 +56,6 @@ Grouping in regex's allows you to group together parts of the pattern that are s
 A bracket expression is a type of character class that allows you to match one set of characters. Bracket expressions are defined using square brackets `[]` and can contain individual charcters, ranges of characters and special characters! In this regex two bracket expressions are used. The first one is `[a-z0-9_\.-]` and it matches any one of the specific characters lowecase letters, digits, underscores, dots and hyphens. The second one is `[\da-z\.-]` and this one matches any one of the specific characters digits, lowercase letters dots and hyphens.
 Both of these bracket expressions are used as part of the capture groups.
 
-### Greedy and Lazy Match
-
 ### Boundaries
 
 Boundaries in regex's define the starting and ending points of the string. They are used to make sure the pattern matches the entire string. There are 2 boundaiers being used in this regex.
@@ -72,8 +65,6 @@ Together these make it so it will only match an email address that starts in the
 ### Back-references
 
 Back-references in regex's allow you to refer to a previously matched pattern in the expression. This is useful for checking if a pattern appears twice in a string or verifying the pattern is repeated in a specific way. The back-references for this regex are for the first capturing group `([a-z0-9_\.-]+)` and this is referred to as `/1` later in the expression. This is for the part before the @ symbol in an email. The second one is in the second capturing group `([\da-z\.-]+)` and is referred to as `/2` later in the expression. This capturing group is for the portion between the @ and the . symbol. The third one is for the third capturing group `([a-z\.]{2,6})` and is refferd to as `/3` later in the expression. This capturing group is for portion of the email after . witch is usually .com .org etc.
-
-### Look-ahead and Look-behind
 
 ## Author
 
